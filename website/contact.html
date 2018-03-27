@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create User</title>
+  </head>
+  <body>
+    <h1>Create User</h1>
+    <hr>
+    <form action="create_user.html" method="get" enctype="application/x-www-form-urlencoded" >
+        <fieldset>
+            <fieldset>
+                <label>Username: </label>
+                <input type="text" name="username" placeholder="username" size="30" maxlength="12" pattern="^[a-zA-Z]+$" title="Username can be only letters" required>
+                <label>Password: </label>
+                <input type="password" name="password" size="30" maxlength="8" placeholder="password" pattern="[0-9]+" title="Password can be only numbers" required>
+            </fieldset>
+            
+            <fieldset>
+                <label>Select your favourite superhero:</label>
+                <input type="radio" name="superheroes" value="superman" > Superman
+                <input type="radio" name="superheroes" value="batman" checked="checked"> Batman
+                <input type="radio" name="superheroes" value="wonder_woman" > Wonder Woman
+                <input type="radio" name="superheroes" value="flash" > Flash
+                <input type="radio" name="superheroes" value="thor" > Thor
+                <input type="radio" name="superheroes" value="hulk" > Hulk
+                <br>
+                <label>Select your favourite videogame:</label>
+                <input type="checkbox" name="videogames" value="fifa" checked="checked" > Fifa
+                <input type="checkbox" name="videogames" value="nhl" > NHL
+                <input type="checkbox" name="videogames" value="resident_evil" > Wonder Woman
+                <input type="checkbox" name="videogames" value="uncharted" checked="checked"> Flash
+            
+            </fieldset>
+
+                <input type="hidden" name="userid" value="2300" >
+                <br>
+                <label for="birthday-date">Date:</label>
+                <input type="date" name="birthday" id="birthday_date"/>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required/>
+
+                <label for="url">URL:</label>
+                <input type="url" name="personalsite" id="url"/>
+            
+                <input type="image" src="img/register_button.png"  style="height: 100px; width: 150px">
+                
+        </fieldset>   
+    </form>
+    
+    <form action="https://www.google.ca/search">
+        <fieldset>
+            <label for="search_input">Search</label>
+            <input type="search" name="q" id="search_input"/>
+            <input type="button" name="search" value="Search"/>
+        </fieldset>
+    </form>
+  </body>
+</html>

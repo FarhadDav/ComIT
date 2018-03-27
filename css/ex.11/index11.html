@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container{
+            background-color: gray;
+            width: 600px;
+            margin:auto;
+        }
+
+        #container>a{
+            display: block;
+            text-align: center;
+            color: white;
+            text-decoration-style: none;
+            border-bottom: 1px black solid;
+            padding: 10px;
+            transform: inherit;
+        }
+
+        #container>a:hover{
+            background-color: #eee;
+            color: gray;
+        }       
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <a href="#">link</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+    </div>
+  </body>
+</html>
