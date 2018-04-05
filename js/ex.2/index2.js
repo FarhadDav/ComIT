@@ -1,0 +1,10 @@
+var firstName;
+firstName="Farhad";
+var lastName;
+lastName="Davudov";
+var age;
+age=21;
+var address;
+address="78 Hargrave";
+var dateOfBirth;
+dateOfBirth="05/21/1993";
