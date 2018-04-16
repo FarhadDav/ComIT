@@ -2,61 +2,49 @@
 <html>
     <head>
         <title>Winnipeg's Best Computer Store</title>
+        <link href="css/bootstrap.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        <link href="css/styles.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
         <h1>Winnipeg's Best Computer Store</h1>
         <hr>
                 
-        <header>
-            <nav>
-                <a href="../index.html">Home</a> |
-                <a href="../catalog.html">Catalog</a> |
-                <a href="../contact.html">Contact Us</a> |
+        <header class="container">
+            <nav class="row">
+                <a class="col" href="../index.html">Home</a> 
+                <a class="col" href="../catalog.html">Catalog</a> 
+                <a class="col" href="../contact.html">Contact Us</a> 
             </nav>
-            <h1>Contact Us</h1>
+            <h1 class="header-namepage">Contact Us</h1>
         </header>
-        <form action="thank_you.html" method="get" enctype="application/x-www-form-urlencoded" >
-            <fieldset>
-                <fieldset>
-                    <table>
-                    <tr>
-                        <td >
-                            <label>Name: </label>
-                        </td>
-                        <td >
-                            <input type="text" name="name" placeholder="Your Name" size="30" pattern="^[a-zA-Z]+$" title="Name can be only letters" required>
-                        </td>
-                    </tr>
-                   
-                    <tr>
-                        <td >
-                            <label>Number: </label>
-                        </td>
-                        <td >
-                            <input type="tel" name="phone" required>
-                        </td>
-                    </tr> 
-                                        
-                    <tr>
-                        <td>
-                            <label>Desired Model: </label>
-                        </td>
-                        <td >
-                            <input type="text" name="model" placeholder="Model" size="30"  required>
-                        </td>
-                    </tr>
+        <form class="container form-group" action="thank_you.html" method="get" enctype="application/x-www-form-urlencoded" >
+            <div class="row">
+                <div class="col">
+                    <label>Name: </label>
+                    <input class="form-control" type="text" name="name" placeholder="Your Name" pattern="^[a-zA-Z]+$" title="Name can be only letters" required>
+                </div>
+                <div class="col">
+                    <label>Number: </label>
+                    <input class="form-control" type="tel" name="phone" required>
+                </div>
+                
+            </div>
+           
+                            
                     
-                    <tr>
-                        <td >
+                            
+                     
+                            <label>Desired Model: </label>
+                       
+                            <input class="form-control" type="text" name="model" placeholder="Model" required>
+                     
                             <label>Comments (optional): </label>
-                        </td>
-                        <td >
-                            <input type="text" name="comments" placeholder="Comments" size="100">  
-                        </td>
-                    </tr>   
-                    </table>   
+                        
+                            <input class="form-control" type="text" name="comments" placeholder="Comments" >  
+                     
                 </fieldset>  
-                <input type="submit" name="submit" value="Submit">      
+                <input class="form-control" type="submit" name="submit" value="Submit">      
             </fieldset>
         </form>
     </body>
